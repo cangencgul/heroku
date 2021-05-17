@@ -19,7 +19,7 @@ func myFunc3(w http.ResponseWriter, _ *http.Request){
 func main(){
 	port := os.Getenv("PORT")
     	if port == "" {
-        	log.WithField("PORT", port).Fatal("$PORT must be set")
+        	log.Fatal("error")
     	}
 	http.Handle("/", http.HandlerFunc(myFunc2))
 	http.Handle("/3", http.HandlerFunc(myFunc3))
