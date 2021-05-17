@@ -17,6 +17,6 @@ func myFunc3(w http.ResponseWriter, _ *http.Request){
 
 func main(){
 	http.Handle("/", http.HandlerFunc(myFunc2))
-	http.Handle("/", http.HandlerFunc(myFunc3))
+	http.Handle("/3", http.HandlerFunc(myFunc3))
 	http.ListenAndServe(":8080", http.HandlerFunc(myFunc))
 }
