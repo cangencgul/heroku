@@ -1,3 +1,3 @@
-module awesomeProject1
+module heroku
 
 go 1.15
