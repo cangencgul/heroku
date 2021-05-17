@@ -1,0 +1,49 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/gopro/assets/styles/style.css">
+</head>
+<body>
+<div id="main">
+<div id="selection">
+    <form action="" method="post">
+        <label for="character">Character:</label>
+        <input list="characters" name="character" id="character">
+        <datalist id="characters">
+            <option value="Villager">
+            <option value="Detective">
+            <option value="Werewolf">
+            <option value="Jailer">
+            <option value="Doctor">
+            <option value="Fool">
+        </datalist>
+        <input type="submit">
+    </form>
+</div>
+<div id="allInfo">
+    <div id="leftInfo">
+        <div>
+            <img src="{{ .Img }}" id="picture" alt="pp">
+        </div>
+        <div>
+            <button type="button" class="btn">{{ .Name }}</button>
+        </div>
+    </div >
+    <div id="rightInfo">
+        <div id="shortInfo">
+            <div id="team"><p>{{ .Team }}</p></div>
+            <div id="aura"><p>{{ .Aura }}</p></div>
+
+        </div>
+        <div id="description">
+            <p>{{ .Description }}</p>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
