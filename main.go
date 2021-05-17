@@ -14,7 +14,8 @@ func myFunc2(w http.ResponseWriter, _ *http.Request){
 }
 
 func myFunc3(w http.ResponseWriter, _ *http.Request){
-	io.WriteString(w, "deneme3")
+	t, _ := template.ParseFiles("map.html")
+	t.Execute(w, "fff")
 }
 
 func main(){
