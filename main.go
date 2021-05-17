@@ -2,7 +2,6 @@ package main
 
 import (
 	"html/template"
-	"io"
 	"os"
 	"log"
 	"net/http"
