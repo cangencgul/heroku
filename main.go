@@ -12,6 +12,7 @@ func myFunc2(w http.ResponseWriter, _ *http.Request){
 	t, _ := template.ParseFiles("main.html")
 	t.Execute(w, "fff")
 }
+
 func myFunc3(w http.ResponseWriter, _ *http.Request){
 	io.WriteString(w, "deneme3")
 }
