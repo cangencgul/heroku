@@ -9,7 +9,7 @@ func main() {
   
   mux := http.NewServeMux()
   mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request){
-    fmt.Println(w, "fasafiso")
+    fmt.Println("fasafiso")
   })
   
   s := &http.Server{
