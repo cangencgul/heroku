@@ -10,7 +10,7 @@ import (
 
 func myFunc2(w http.ResponseWriter, _ *http.Request){
 	t, _ := template.ParseFiles("main.html")
-	t.Execute(w, _)
+	t.Execute(w, "fff")
 	io.WriteString(w, "deneme2")
 }
 func myFunc3(w http.ResponseWriter, _ *http.Request){
