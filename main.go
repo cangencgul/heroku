@@ -3,6 +3,7 @@ package main
 import (
 	"io"
 	"os"
+	"log"
 	"net/http"
 )
 
