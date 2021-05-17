@@ -6,6 +6,9 @@ import(
 )
 
 func main() {
-  fmt.Println("fasafiso")
+  
   mux := http.NewServeMux()
+  mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request){
+    fmt.Println(w, "fasafiso")
+  })
 }
