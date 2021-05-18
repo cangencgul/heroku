@@ -1,4 +1,5 @@
-  
+HTML CSS JSResult Skip Results Iframe
+EDIT ON
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100);
 
 .animate {
@@ -102,13 +103,4 @@ body {
   width: 300px;
   height: 500px;
   z-index: 0;
-}
-.mapdiv {
-        width: 60%;
-        margin: auto;
-}
-.mapdiv path {
-        fill: #ec4747;
-        stroke: #eeeeec;
-        transition: fill 0.3s;
 }
