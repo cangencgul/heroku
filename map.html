@@ -13,24 +13,33 @@
             stroke: #eeeeec;
             transition: fill 0.3s;
         }
+        .animate { transition: transform 0.3s ease-out;}
+        .ms-touch.slider {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            -ms-overflow-style: none;
+            -ms-scroll-chaining: none;
+            -ms-scroll-snap-type: mandatory;
+            -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+        }
     </style>
 </head>
 <body>
-<div id="selection">
-    <form action="" method="post">
-        <label for="character">iller</label>
-        <input list="characters" name="character" id="character">
-        <datalist id="characters">
-            <option value="Edirne">
-            <option value="Istanbul">
-            <option value="Ankara">
-            <option value="Izmir">
-            <option value="Antalya">
-            <option value="Bursa">
-        </datalist>
-        <input type="submit">
-    </form>
-</div>	
+<div class="slider-wrap">
+    <div class="slider" id="slider">
+        <div class="holder">
+            <div class="slid-wrapper">
+                74
+            </div>
+            <div class="slid-wrapper">
+                83
+            </div>
+            <div class="slid-wrapper">
+                65
+            </div>
+        </div>
+    </div>
+</div>
 <div class="mapdiv">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
          viewBox="0 0 800 600">
@@ -1260,5 +1269,7 @@
 </g>
 </svg>
 </div>
+<script src="script/script1.js">
+</script>
 </body>
 </html>
