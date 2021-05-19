@@ -20,6 +20,17 @@ html, body{
         height: 100%;
 
 }
+#i1, #i2, #i3{
+        display: none;
+}
+.prev, .next{
+        width: 12%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-color: lightslategray;
+        opacity: 0.4;
+}
 .mapdiv {
         width: 60%;
         margin: auto;
