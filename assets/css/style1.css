@@ -15,6 +15,12 @@ html, body{
         border: solid 10px #ec4747;
 
 }
+.slideOption{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+}
 .mapdiv {
         width: 60%;
         margin: auto;
