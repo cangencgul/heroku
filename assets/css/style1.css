@@ -62,6 +62,10 @@ html, body{
 .slideOption > p{
         z-index: -1;
 }
+#i1:checked ~ #1, #i2:checked ~ #2, #i3:checked ~ #3{
+        z-index: 9;
+}
+
 .mapdiv {
         width: 60%;
         margin: auto;
