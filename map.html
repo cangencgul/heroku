@@ -7,30 +7,36 @@
 </head>
 <body>
 <div class="container">
-    <input type="radio" id="i1">
-    <input type="radio" id="i2">
-    <input type="radio" id="i3">
-    <div class="slideOption" id="1">
-        <p>1000</p>
-        <label for="i3" class="prev"></label>
-        <label for="i2" class="next"></label>
+
+    <input type="radio" id="i1" name="images" checked/>
+    <input type="radio" id="i2" name="images"/>
+    <input type="radio" id="i3" name="images"/>
+
+    <div class="slideOption" id="one">
+        <img src="https://preview.ibb.co/iFGxZv/img_1.jpg" alt="1000">
+        <p>1</p>
+        <label class="prev" for="i3" ></label>
+        <label class="next" for="i2" ></label>
     </div>
-    <div class="slideOption" id="2">
-        <p>2568</p>
-        <label for="i1" class="prev"></label>
-        <label for="i3" class="next"></label>
+    <div class="slideOption" id="two">
+        <img src="https://preview.ibb.co/dtVPEv/img_3.jpg" alt="2568">
+        <p>2</p>
+        <label class="prev" for="i1"></label>
+        <label class="next" for="i3"></label>
     </div>
-    <div class="slideOption" id="3">
-        <p>3450</p>
-        <label for="i2" class="prev"></label>
-        <label for="i1" class="next"></label>
+    <div class="slideOption" id="three">
+        <img src="https://preview.ibb.co/cJ1mSF/img_2.jpg" alt="3450">
+        <p>3</p>
+        <label class="prev" for="i2"></label>
+        <label class="next" for="i1"></label>
     </div>
-    <div class="nav">
+    <div id="navSlide">
         <label class="dots" id="dot1" for="i1"></label>
         <label class="dots" id="dot2" for="i2"></label>
         <label class="dots" id="dot3" for="i3"></label>
     </div>
 </div>
+
 <div class="mapdiv">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
          viewBox="0 0 800 600">
