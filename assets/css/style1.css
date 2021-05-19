@@ -30,6 +30,14 @@ html, body{
         top: 0;
         background-color: lightslategray;
         opacity: 0.4;
+        cursor: pointer;
+        z-index: 99;
+}
+.prev{
+        left: 0;
+}
+.next{
+        right: 0;
 }
 .mapdiv {
         width: 60%;
