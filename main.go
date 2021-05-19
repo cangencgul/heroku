@@ -25,11 +25,11 @@ func myFunc4(w http.ResponseWriter, _ *http.Request) {
 func main() {
 	port := os.Getenv("PORT")
 	if port == "" {
-		log.Fatal("error")
+		log.Fatal("erol")
 	}
-	http.Handle("/", http.HandlerFunc(myFunc2))
+
+	http.Handle("/", http.HandlerFunc(myFunc4))
+	http.Handle("/assets/", http.StripPrefix("/assets", http.FileServer(http.Dir("./assets"))))
 	http.Handle("/3", http.HandlerFunc(myFunc3))
-	http.Handle("/option", http.HandlerFunc(myFunc4))
-	http.Handle("/heroku/assets/", http.StripPrefix("/heroku/assets/", http.FileServer(http.Dir("./heroku/assets"))))
 	http.ListenAndServe(":"+port, nil)
 }
