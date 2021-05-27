@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <title>Turkey Map</title>
 	<link rel="stylesheet" href="/assets/css/style1.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+
+    </style>
 </head>
 <body>
+<div class="xaa"  style="display:flex;">
 <div class="container">
 
     <input type="radio" id="i1" name="images" checked/>
@@ -13,22 +18,19 @@
     <input type="radio" id="i3" name="images"/>
 
     <div class="slideOption" id="one">
-        <img src="https://preview.ibb.co/iFGxZv/img_1.jpg" alt="1000">
-        <p>1</p>
-        <label class="prev" for="i3" ></label>
-        <label class="next" for="i2" ></label>
+        <p>1000</p>
+        <label class="prev" for="i3" ><i class="material-icons">arrow_back</i></label>
+        <label class="next" for="i2" ><i class="material-icons">arrow_forward</i></label>
     </div>
     <div class="slideOption" id="two">
-        <img src="https://preview.ibb.co/dtVPEv/img_3.jpg" alt="2568">
-        <p>2</p>
-        <label class="prev" for="i1"></label>
-        <label class="next" for="i3"></label>
+        <p>2456</p>
+        <label class="prev" for="i1" ><i class="material-icons">arrow_back</i></label>
+        <label class="next" for="i3" ><i class="material-icons">arrow_forward</i></label>
     </div>
     <div class="slideOption" id="three">
-        <img src="https://preview.ibb.co/cJ1mSF/img_2.jpg" alt="3450">
-        <p>3</p>
-        <label class="prev" for="i2"></label>
-        <label class="next" for="i1"></label>
+        <p>3450</p>
+        <label class="prev" for="i2" ><i class="material-icons">arrow_back</i></label>
+        <label class="next" for="i1" ><i class="material-icons">arrow_forward</i></label>
     </div>
     <div id="navSlide">
         <label class="dots" id="dot1" for="i1"></label>
@@ -1266,7 +1268,7 @@
 </g>
 </svg>
 </div>
-<script src="scr/script1.js">
-</script>
+</div>
+    <script src="scr/script1.js"></script>
 </body>
 </html>
