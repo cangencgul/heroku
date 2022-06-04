@@ -21,7 +21,7 @@ func myFunc4(w http.ResponseWriter, _ *http.Request) {
 }
 
 func template_page(w http.ResponseWriter, _ *http.Request){
-	w.Write([]byte("hello template  <3"))
+	w.Write([]byte("hello template   <3"))
 }
 
 func main() {
