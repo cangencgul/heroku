@@ -20,6 +20,10 @@ func myFunc4(w http.ResponseWriter, _ *http.Request) {
 	t.Execute(w, "fff")
 }
 
+func template_page(w http.ResponseWriter, _ *http.Request){
+	w.Write([]byte("hello template <3"))
+}
+
 func main() {
 	/*
 		port := os.Getenv("PORT")
@@ -31,5 +35,6 @@ func main() {
 	http.Handle("/", http.HandlerFunc(myFunc4))
 	http.Handle("/assets/", http.StripPrefix("/assets", http.FileServer(http.Dir("./assets"))))
 	http.Handle("/3", http.HandlerFunc(myFunc3))
+	http.Handl("/template, http.HandlerFunc(template_page)")
 	http.ListenAndServe(":8080", nil)
 }
