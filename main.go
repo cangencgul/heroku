@@ -21,8 +21,7 @@ func myFunc4(w http.ResponseWriter, _ *http.Request) {
 }
 
 func template_page(w http.ResponseWriter, _ *http.Request) {
-	t, _ := template.ParseFiles("option.html")
-	t.Execute(w, "fff")
+	w.Write([]byte("hello template <3"))
 }
 
 func main() {
