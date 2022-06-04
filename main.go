@@ -35,6 +35,6 @@ func main() {
 	http.Handle("/", http.HandlerFunc(myFunc4))
 	http.Handle("/assets/", http.StripPrefix("/assets", http.FileServer(http.Dir("./assets"))))
 	http.Handle("/3", http.HandlerFunc(myFunc3))
-	http.Handle("/template", http.HandlerFunc(template_page)")
+	http.Handle("/template", http.HandlerFunc(template_page))
 	http.ListenAndServe(":8080", nil)
 }
