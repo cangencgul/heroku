@@ -26,12 +26,11 @@ func template_page(w http.ResponseWriter, _ *http.Request) {
 }
 
 func main() {
-	/*
-		port := os.Getenv("PORT")
-		if port == "" {
-			log.Fatal("erol")
-		}
-	*/
+	port := os.Getenv("PORT")
+	if port == "" {
+		log.Fatal("erol")
+	}
+
 
 	http.Handle("/", http.HandlerFunc(myFunc4))
 	http.Handle("/assets/", http.StripPrefix("/assets", http.FileServer(http.Dir("./assets"))))
