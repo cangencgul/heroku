@@ -3,6 +3,7 @@ package main
 import (
 	"html/template"
 	"net/http"
+	"os"
 )
 
 func myFunc2(w http.ResponseWriter, _ *http.Request) {
