@@ -24,7 +24,7 @@ func myFunc4(w http.ResponseWriter, _ *http.Request) {
 
 
 func myFunc5(w http.ResponseWriter, _ *http.Request) {
-	t, _ := template.ParseFiles("/deneme/f.html")
+	t, _ := template.ParseFiles("/deneme/deneme.html")
 	t.Execute(w, "fff")
 }
 
