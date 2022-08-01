@@ -7,6 +7,11 @@ import (
 	"os"
 )
 
+wd, err := os.Getwd()
+if err != nil {
+   log.Fatal(err)
+}
+
 func myFunc2(w http.ResponseWriter, _ *http.Request) {
 	t, _ := template.ParseFiles("main.html")
 	t.Execute(w, "fff")
@@ -22,9 +27,8 @@ func myFunc4(w http.ResponseWriter, _ *http.Request) {
 	t.Execute(w, "fff")
 }
 
-
 func myFunc5(w http.ResponseWriter, _ *http.Request) {
-	t, _ := template.ParseFiles("/deneme/deneme.html")
+	t, _ := template.ParseFiles(wd + "/deneme/deneme.html")
 	t.Execute(w, "fff")
 }
 
