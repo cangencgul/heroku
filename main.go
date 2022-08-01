@@ -38,6 +38,6 @@ func main() {
 	http.Handle("/kkk/", http.StripPrefix("/deneme", http.FileServer(http.Dir("./deneme"))))
 	http.Handle("/3", http.HandlerFunc(myFunc3))
 	http.Handle("/template", http.HandlerFunc(template_page))
-	http.ListenAndServe(":"+port, nil))
+	http.ListenAndServe(":"+port, nil)
 	//http.ListenAndServe(":8080", nil)
 }
